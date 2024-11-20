@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" />
+    <link rel="shortcut icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+    <title>Ticker AI</title>
+</head>
+
+<body class="bg-white dark:bg-gray-900">
+    <!--? this is header section -->
+    <header class="px-2 py-2 md:mx-14 md:py-4">
+        <nav class="container mx-auto flex items-center justify-between">
+            <div class="flex items-cenater gap-1 md:gap-3">
+                <img src="assets/logo.png" alt="Logo" class="w-10 md:w-fit">
+                <p class="text-[8px] md:text-xs dark:text-white">A Mark Cubin Company <br>
+                    AI-based Financial Market news Aggregator</p>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-7">
+                <a href="news.html">
+                    <button
+                        class="bg-[#5677AC] text-white md:text-base text-xs md:py-3 py-1 md:px-6 px-2 rounded-md font-semibold hover:bg-[#42669e] transition hover:scale-105 hover:translate-y-1">Personalize
+                        News</button>
+                </a>
+                <a href="#">
+                    <div
+                        class="bg-[#5677AC26] text-[#5677AC] rounded-full size-9 text-center font-bold text-lg md:text-2xl flex items-center justify-center hover:scale-105 transition-all">
+                        IK</div>
+                </a>
+
+                <button id="switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 dark:stroke-white transition-all hover:scale-105">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ?this is banner section -->
+    <section
+        class="flex flex-col items-center md:px-0 px-4 md:py-32 py-20 bg-[url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover">
+        <h1 class="md:text-7xl text-3xl font-bold italic inline px-1 text-white">tickerAI</h1>
+
+        <div class="flex bg-white w-full md:w-[520px] md:p-4 p-2 items-center rounded gap-4 md:mt-10 mt-4 hover:ring ">
+            <i class="fa fa-search"></i>
+            <input type="text" name="search" class="w-full outline-none" placeholder="search any market topic...">
+        </div>
+
+        <p class="text-xs text-gray-300 md:pt-4 pt-2">
+            There are 6 articles avaiable for your preferences
+        </p>
+    </section>
+
+    <!--? this is all-news section -->
+    <section class="container grid grid-cols-12 mx-auto gap-8 md:px-0 px-4 pt-10">
+        <!--! this is left section -->
+        <section class="md:col-span-9 col-span-12 md:ml-8 ">
+            <div class="flex items-center justify-between md:pb-2.5 border-b border-black md:border-b-[3px] dark:border-b-white">
+                <h3 class="md:text-2xl text-lg font-semibold text-[#333333] dark:text-white">All NEWS</h3>
+
+                <div class="flex items-center gap-2">
+                    <p class="dark:text-white">Filter by:</p>
+                    <h4 class="font-bold dark:text-white">Stocks</h4>
+                    <i class="fa-solid fa-chevron-down dark:text-white"></i>
+                </div>
+            </div>
+
+            <h2 class="head-card dark:text-white">Individual Stocks</h2>
+
+            <!--! this is card section -->
+            <div class="news">
+                <img src="assets/news-1.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Nzd/usd forex technical analysis -
+                            traders will be monitoring fed for future rate hike clues</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161] dark:text-gray-200">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <img src="assets/news-2.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161]">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <img src="assets/news-3.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161]">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--! this is stock sectors -->
+            <h2 class="head-card dark:text-white">Stock Sectors</h2>
+
+            <div class="news">
+                <img src="assets/news-4.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Nzd/usd forex technical analysis -
+                            traders will be monitoring fed for future rate hike clues</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161]">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <img src="assets/news-5.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161]">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--! this is stock market topic -->
+            <h2 class="head-card dark:text-white">Stock Market Topic</h2>
+
+            <div class="news">
+                <img src="assets/news-6.png" alt="news-1" class="w-full h-44 object-cover md:h-fit md:size-[160px]">
+
+                <div class="md:space-y-4 space-y-3">
+                    <div class="flex items-center gap-2 ">
+                        <span class="caption">DOW JONES</span>
+                        <span class="caption">NASDAQ</span>
+                        <span class="caption">S & P 500</span>
+                    </div>
+
+                    <div>
+                        <h3 class="new-head">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h3>
+                        <p class="new-p">Amet minim mollitnon deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat duis enim Velit mollit. Exercitation
+                            veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                        <p class="text-[#616161]">06 September 2022</p>
+                        <p class="dark:text-gray-500">By <span class="text-[#5677AC] font-semibold cursor-pointer">SHUVIK NATH</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--! this is right section -->
+        <section class="md:col-span-3 col-span-12 md:mr-8">
+            <div class="flex items-center justify-between md:pb-2.5 pb-1 border-b border-black md:border-b-[3px] dark:border-b-white">
+                <h3 class="md:text-2xl text-lg font-semibold text-[#333333] upperase dark:text-white">Featured</h3>
+            </div>
+
+            <h2 class="head-card dark:text-white">Daily Rundowns</h2>
+
+            <!--? this is tag section -->
+            <div class="border border-[#F5F5F5] p-3 md:p-5  space-y-3 md:space-y-5 md:mt-5">
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Earnings:</h3>
+                    <div>
+                        <span class="tag">CSAN</span>
+                        <span class="tag">ALYA</span>
+                        <span class="tag">GATO</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">MFH</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Movers:</h3>
+                    <div>
+                        <span class="tag">REV</span>
+                        <span class="tag">PETV</span>
+                        <span class="tag">TYTM</span>
+                        <span class="tag">SRRK</span>
+                        <span class="tag">VERA</span>
+                        <span class="tag">KZIA</span>
+                        <span class="tag">SYM</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-medium pb-2 dark:text-white">Technicals:</h3>
+                    <div class="">
+                        <span class="tag">BEARISH</span>
+                        <span class="tag">REGN</span>
+                        <span class="tag">TSLA</span>
+                        <span class="tag">MCD</span>
+                        <span class="tag">BULLISH</span>
+                        <span class="tag">USO</span>
+                        <span class="tag">SEDG</span>
+                        <span class="tag">ENPH</span>
+                        <span class="tag">SHOP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--? this is image gallery -->
+            <div class="md:my-5" >
+                <img src="assets/current-news-1.png" alt="" class="w-full object-cover">
+                <h2 class="font-medium tex-[#121212] p-4 text-center dark:text-white">Amet minim mollit non desrunt ullamco est sit aliqua dolor do amet sint.</h2>
+            </div>
+
+            <div class="md:my-5" >
+                <img src="assets/current-news-2.png" alt="" class="w-full object-cover">
+                <h2 class="font-medium tex-[#121212] p-4 text-center dark:text-white">Amet minim mollit non desrunt ullamco est sit aliqua dolor do amet sint.</h2>
+            </div>
+
+            <div class="md:my-5" >
+                <img src="assets/current-news-3.png" alt="" class="w-full object-cover">
+                <h2 class="font-medium tex-[#121212] p-4 text-center dark:text-white">Amet minim mollit non desrunt ullamco est sit aliqua dolor do amet sint.</h2>
+            </div>
+        </section>
+    </section>
+
+    <!-- ?footer section -->
+     <footer class="text-black text-center pb-5 w-full dark:text-white">
+        All right reserved Ticker AI - 2024
+     </footer>
+
+
+     <script>
+        const htmlTag = document.getElementById("htmlTag")
+        document.getElementById("switch").addEventListener("click", function() {
+            htmlTag.classList.toggle("dark");
+        });
+     </script>
+</body>
+
+</html>
